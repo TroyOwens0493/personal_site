@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: #202B37; /* Default foreground color (secondary color) */
+  --background-color: #ffffff; /* Default background color (primary color) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #FFFFFF; /* Foreground color for dark mode (white) */
+    --background-color: #000000; /* Background color for dark mode (secondary color) */
+  }
+}
+
+body {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
